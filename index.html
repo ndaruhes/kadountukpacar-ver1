@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <title>Buat Kamu</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .content{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 700px;
+            font-size: 50px;
+            padding: 0 40px;
+        }
+
+        @media screen and (max-width: 768px){
+            .content{
+                height: 400px;
+                font-size: 30px;
+                padding: 0 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" id="tulisan">
+        <div class="content" style="background: #fd79a8;">
+            Hellow cantikk ❤️
+        </div>
+        <div class="content" style="background: #6c5ce7">
+            selamat ulang tahun yaa 🥰
+        </div>
+        <div class="content" style="background: #e17055;">
+            maaf aku belom bisa ngasi kado yg unik
+        </div>
+        <div class="content" style="background: #00cec9;">
+            tapi semoga aja kamu seneng
+        </div>
+        <div class="content" style="background: #0984e3;">
+            oiya satu lagiii
+        </div>
+        <div class="content" style="background: #55efc4">
+            maafin aku ya hari ini jadi jarang ngobroll
+        </div>
+        <div class="content" style="background: #fdcb6e">
+            di hari ulang tahun kamu hari ini
+        </div>
+        <div class="content" style="background: #e17055">
+            aku berharap.....
+        </div>
+        <div class="content" style="background: #f9ca24">
+            semoga kita terus melangkah maju dan bisa lewatin badai bareng2
+        </div>
+        <div class="content" style="background: #ff7675">
+            semoga kamu sehat selalu, bisa jadi perempuan yang lebih baik dan makin semangat beribadah
+        </div>
+        <div class="content" style="background: #6c5ce7">
+            semoga aku jugaa biar kita sama-samaa, semoga juga kita dipertemukan ya suatu saat nantiii
+        </div>
+        <div class="content" style="background: #636e72">
+            oiyaa oiyaaaaaaa
+        </div>
+        <div class="content" style="background: #b2bec3">
+            <div>
+                Mau liat sesuatu gk?
+                <br>
+                <center>
+                    <button class="btn btn-primary btn-sm" type="button" id="mau">Mauu donggs</button>
+                    <button class="btn btn-outline-danger btn-sm" data-bs-toggle="modal" data-bs-target="#somethingModal" id="nggk">Nggk 🙁</button>
+                </center>
+            </div>
+        </div>
+    </div>
+
+    <div class="container py-5" id="foto" style="opacity: 0; transition: 0.4s;">
+        <h1 class="fs-3 fw-bold py-3 mb-3" style="color: #ff7675"><marquee behavior="scroll" direction="left">Selamat ulang tahunnn yaaaa, semoga sehat selalu dan semoga kita dipertemukan nanti 🥰😊</marquee></h1>
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <img src="images/hugs-love.gif" alt="hugs-love.gif" border="0" class="w-100">
+            </div>
+            <div class="col-md-6 mb-3">
+                <img src="images/love-ghost.gif" alt="love-ghost.gif" border="0" class="w-100">
+            </div>
+        </div>
+        <h1 class="fs-6" style="color: #6c5ce7">hehehehe 😁😁</h1>
+    </div>
+
+    <div class="modal fade" id="somethingModal" tabindex="-1" aria-labelledby="somethingModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="somethingModalLabel">Beneran?</h5>
+                    <button type="button" class="btn-close" id="modalClose2" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    yakin gk mau liat nih?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-danger btn-sm" data-bs-dismiss="modal">nggk mau 🙁 </button>
+                    <button type="button" class="btn btn-primary btn-sm" id="iya-mau">iyaudah iatt dehhh 😁</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade show" id="playMusicModal" tabindex="-1" aria-labelledby="playMusicModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="playMusicModalLabel">Sambil Setel Musik Yuk....</h5>
+                    <button type="button" class="btn-close" id="modalClose1" data-bs-dismiss="modal" aria-label="Close" style="opacity: 0"></button>
+                </div>
+                <div class="modal-body">
+                    Klik dulu ya tombolnyaa <br> <br>
+                    <button type="button" class="btn btn-sm shadow" style="background: #C66CF7; color: white" id="play-music">Ocee baby 😁</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+    </script>
+
+    <script>
+        const playMusicModal = new bootstrap.Modal(document.getElementById('playMusicModal'))
+        playMusicModal.show()
+
+        const sound1 = new Audio("audio/to-the-bone-slow.mp3");
+        const playMusic = document.getElementById('play-music');
+        const modalClose1 = document.getElementById('modalClose1');
+        playMusic.addEventListener('click',() => {
+            sound1.currentTime = 0;
+            sound1.play();
+            modalClose1.click()
+        });
+
+
+        const mau = document.getElementById('mau')
+        const nggk = document.getElementById('nggk')
+        const tulisan = document.getElementById('tulisan')
+        const foto = document.getElementById('foto')
+        const iyaMau = document.getElementById('iya-mau')
+
+        const sound2 = new Audio("audio/selamat-ulang-tahun.mp3")
+        mau.onclick = function(){
+            sound1.pause()
+            foto.style.opacity = '1'
+            window.scrollY = 0
+            sound2.play();
+            window.scrollTo(0,document.body.scrollHeight);
+        }
+
+        iyaMau.onclick = function(){
+            sound1.pause()
+            foto.style.opacity = '1'
+            sound2.play()
+            const modalYa = document.getElementsByClassName('modal')
+            window.scrollTo(0, document.body.scrollHeight);
+            modalClose2.click()
+        }
+    </script>
+</body>
+
+</html>
